@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="file:///C:/Users/Deeps/Downloads/TAN_Nimbus/TAN-NIMBUS.otf">
+    <title>Cookies and cream</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: 'Alata';
+            src: url('TAN-NIMBUS.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'head';
+            src: url('Alata-Regular.ttf') format('truetype');
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #FEFDEB;
+            overflow-x: hidden;
+            overflow-y: auto;
+            min-height: 100vh;
+            
+        }
+        .word1 { left: 38%; }
+        .word2 { left: 42.3%; }
+        .word3 { left: 47%; }
+        .word4 { left: 53%; }
+        .cookies-text {top: 36%; left: 15%; z-index: 20;}
+
+        p {
+            color: rgba(254, 253, 235, 0.70);
+            font-size: 20px;
+            font-family: 'Alata', sans-serif;
+            font-weight: 150;
+            word-wrap: break-word;
+            overflow: hidden;
+
+        }
+        .positioned-element {
+            position: absolute;
+            background-color: #1B0A00;
+            padding: 20px 30px;
+            border-radius: 63px;
+            box-shadow: 0px 11px 16.2px  rgba(254, 253, 235, 0.70);
+            margin-top: 0px;
+            backdrop-filter: blur(15.20px);
+            text-align: center;
+            left: 1000px;
+            bottom: 300px;
+        }
+        a {
+            color: #FEFDEB;
+            font-family: 'Alata', sans-serif;
+            background-color: transparent;
+            text-decoration: none;
+            white-space: nowrap;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .header-font{
+            color: #141204;
+            font-family: 'head', sans-serif;
+            background-color: transparent;
+            text-decoration: none;
+            white-space: nowrap;
+            font-size: 18px;
+            position:fixed;
+            height: auto;
+            top: 40px;
+            text-align: center;
+        }
+        .cookies-img {
+            max-width: 30%;
+            height: auto;
+            background-color: transparent;
+            margin-left: -63%; 
+            margin-top: 12%;
+            position: absolute;
+
+            transition: all 1s ease;
+        }
+        .cone-img {
+            max-width: 40%;
+            height: auto;
+            margin-top: 15%;
+            margin-bottom: -8.7%;
+            margin-left: -67%; 
+            position: absolute;
+            transition: all 1s ease;
+        }
+        .logo-img {
+            max-width: 2%;
+            height: auto;
+            position: fixed;
+            top: 4%;
+            left: 3%;
+            transition: all 1s ease;
+        }
+        .oreo-img{
+            max-width: 100%;
+            height: auto; 
+            display: block;
+            position: absolute;
+        }
+        .Title-text{
+            color: #141204;
+            font-family: 'Alata', sans-serif;
+            background-color: transparent;
+            font-size: 7vh;
+            position: absolute;
+            text-decoration: none;
+            white-space: nowrap;
+            word-wrap: break-word;
+            text-align: right;
+        }
+        #menu-links {
+        position: fixed;
+        top: 4%; }
+
+        .cone-small{
+            max-width: 30%;
+            height: auto;
+            background-color: transparent;
+            margin-left: 0%; 
+            margin-top: 31%;
+            position: absolute;
+
+            transition: all 1s ease;
+        }
+        .icecream-vanilla{
+            max-width: 20%;
+            height: auto;
+            background-color: transparent;
+            margin-left: 0.5%; 
+            margin-top: 340px;
+            position: absolute;
+            transition: all 1s ease;
+        }
+        .cone-side{
+            max-width: 30%;
+            height: auto;
+            background-color: transparent;
+            margin-left: 990px; 
+            margin-top: 460px;
+            position: absolute;
+
+            transition: all 1s ease;
+        }
+        .icecream-choco{
+            max-width: 18%;
+            height: auto;
+            background-color: transparent;
+            margin-left: 1010px; 
+            margin-top: 340px;
+            position: absolute;
+            transition: all 1s ease;
+        }
+        .cone-img,
+        .cone-small,
+        .cone-side {
+            z-index: 2; 
+        }
+
+        .cookies-img,
+        .icecream-vanilla,
+        .icecream-choco {
+            height: auto;
+            z-index: 3; 
+        }
+
+        .cookies-text,
+        .positioned-element {
+            z-index: 3; 
+        }
+
+        .Title-text {
+            z-index: 3; 
+        }
+
+        .header-font,
+        #menu-links,
+        .logo-img {
+            width: 2%;
+            height: auto;
+            z-index: 6; 
+        }
+        .size{
+            font-size: 2vh;
+            color: #FEFDEB;
+        
+        }
+        .locationa{
+            align-items: center;
+            color: #141204;
+        }
+        .contact{
+            top: 10%;
+            left: 10%;
+        }
+        #thankYouMessage {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container"> 
+        <div class="slides">
+                <div>
+                    <nav>
+                        <ul>
+                            <li><a href="#Menu"class="header-font word1">Menu&ThickSpace;&ThickSpace;</a></li>
+                            <li><a href="#Order"class="header-font word2">&ThickSpace;Orders&ThickSpace;&ThickSpace;</a></li>
+                            <li><a href="#Prices"class="header-font word3">&ThickSpace;Location&ThickSpace;&ThickSpace;</a></li>
+                            <li><a href="#Contactus"class="header-font word4">&ThickSpace;Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <p class="Title-text cookies-text">
+                    Cookies and <br>cream </br>
+                </p>
+                <img src="photos/cone big.png" class="cone-img">
+                <img src="photos/cookie and cream (1).png" class="cookies-img">
+                <img src="photos/logo.png" class="logo-img">
+                <img src="photos/cone small.png" class="cone-small">
+                <img src="photos/vanilla.png" class="icecream-vanilla">
+                <img src="photos/cone small.png" class="cone-side">
+                <img src="photos/choco.png" class="icecream-choco">
+                <img src="photos/Rectangle 2.png" style="top: -60px; position: fixed; z-index: 4;">
+                <img src="photos/Background.jpg" style="z-index: 1px; width: 100%;">
+                
+                        
+<!--scroll to clicked-->
+<div class="slides">
+    <section id="Home">
+    <p class="Title-text" style="align-items: center;">
+    
+
+    <div class="positioned-element">
+        <p>
+            <a href="#Order">&NonBreakingSpace;&NonBreakingSpace;Order Now&NonBreakingSpace;&NonBreakingSpace;</a>            
+        </p>
+    </div>
+    <a href="index.html" id="logo-link">
+        <img src="photos/logo.png" class="logo-img">
+    </a>
+
+</div>
+
+    </p>
+</section>
+</div>
+<div class="slides">
+    <section id="Menu">
+        <img src="photos/menu.png" style="width: 100%; height: auto; margin-top: 0px; margin-left: 0px;">
+    </section>
+</div>
+
+<div class="slides" style="background-image: url(photos/bgm.png); height: 100vh; top: 0%;">
+    <section id="Order">
+    <p class="Title-text">
+        <form action="#" onsubmit="submitForm(); return false;">
+            <label for="name" class="Title-text size" style=" margin-left: -10%;">Name:</label>
+            <input type="text" id="name" name="name" required style><br>
+    
+            <label for="phone"class="Title-text size"style=" margin-left: -10%;">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+    
+            <label for="address" class="Title-text size"style=" margin-left: -10%;">Address:</label>
+            <textarea id="address" name="address" required></textarea><br>
+    
+            <label for="email" class="Title-text size"style=" margin-left: -10%;">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+    
+            <label for="flavor" class="Title-text size"style=" margin-left: -10%;">Select Ice Cream <br>Flavor:</br></label>
+            <select id="flavor" name="flavor">
+                <option value="cookies_s">Cookies Small</option>
+                <option value="cookies_l">Cookies Large</option>
+                <option value="chocolate_s">Chocolate Small</option>
+                <option value="chocolate_l">Chocolate Large</option>
+                <option value="strawberry_s">Strawberry Small</option>
+                <option value="strawberry_l">Strawberry Large</option>
+                <option value="vanilla_s">Vanilla Small</option>
+                <option value="vanilla_l">Vanilla Large</option>
+            </select><br>
+    
+            <br><input type="submit" value="Submit Order" class="Title-text size"></br>
+        </form>
+        <div id="thankYouMessage">
+            <img src="photos/Thankyou.png" alt="Thank You Image">
+        </div>
+    </p>
+</section>
+</div>
+<div class="slides">
+    <section id="Prices">
+    <div>
+        <a href="https://www.google.com/maps/place/Manipal+Institute+of+Technology+(MIT)/@13.3525321,74.7928224,15z/data=!4m6!3m5!1s0x3bbca4a7d2c4edb7:0x8d588d4fb81d861f!8m2!3d13.3525321!4d74.7928224!16zL20vMDh0Zmsw?entry=ttu" target="_blank">
+            <img src="photos/location .png" style="width: 40%; z-index: 2; margin-right: 20%; margin-top: -5%; position: absolute; border-radius: 50px;">
+        </a>
+        <img src="photos/h.jpg" style="width: 100%; z-index: 1; position: absolute; margin-left: -50%; margin-top: -27%;">
+    </div>
+</section>
+</div>
+<div class="slides">
+    <section id="Contactus">
+    <div class="Title-text ">
+        Contact us
+            <a href="https://www.instagram.com/manipalbiomachines/" style="color: #141204; align-items: center;"> Instagram</a>
+    </div>
+</section>
+</div>
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+<script>
+    function submitForm() {
+        document.getElementById('orderForm').style.display = 'none';
+        document.getElementById('thankYouMessage').style.display = 'block';
+    }
+</script>
+</div>
+</body>
+</html>
